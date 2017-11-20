@@ -7,20 +7,16 @@
         <style type="text/css">
             
             #div1{
-                color: blue;
-                background-color: pink;
-                width: 300px;
-                position: relative;
-                left: 100px;
-                top: 100px;
-                z-index: 1;
+                color: black;
+                background-color: white;
+                position: fixed;
+                right:0px;
+                bottom:0px;
             }
             #div2{
                 background-color: yellow;
                 width: 200px;
-                position: relative;
-                z-index: 2;
-                opacity: 0.5;
+                height: 5000px;
             }
             .underlined{
                 text-decoration: underline;
@@ -36,10 +32,9 @@
         
     </head>
     <body>
-        <h1>CSS YAY!</h1>
+        <h1 id="#top">CSS YAY!</h1>
         <div id="div1">
-            <p class="red">Dies ist ein Text.</p>
-            <p class="large">Noch mehr Text.</p>
+            <p><a href="#top">Back to the top!</a></p>
         </div>
         <div id="div2">
             <p>Dies ist etwas mehr Text. <span class="underlined">Und dies ist unterstrichen</span>.</p>
