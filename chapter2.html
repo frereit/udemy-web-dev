@@ -10,12 +10,17 @@
                 color: blue;
                 background-color: pink;
                 width: 300px;
-                float: left;
+                position: relative;
+                left: 100px;
+                top: 100px;
+                z-index: 1;
             }
             #div2{
                 background-color: yellow;
                 width: 200px;
-                float: right;
+                position: relative;
+                z-index: 2;
+                opacity: 0.5;
             }
             .underlined{
                 text-decoration: underline;
@@ -25,9 +30,6 @@
             }
             .large{
                 font-size: 250%;
-            }
-            .clear-float{
-                clear: both
             }
         </style>
         
@@ -43,7 +45,6 @@
             <p>Dies ist etwas mehr Text. <span class="underlined">Und dies ist unterstrichen</span>.</p>
             <p>Internal CSS ist super.</p>
         </div>
-        <div class="clear-float"></div>
         <p>Etwas mehr Text</p>
     </body>
 </html>  
