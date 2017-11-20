@@ -7,16 +7,23 @@
         <style type="text/css">
             
             #div1{
-                color: black;
-                background-color: white;
-                position: fixed;
-                right:0px;
-                bottom:0px;
+                color: blue;
+                background-color: pink;
+                width: 300px;
+                margin-top: 200px;
+                padding: 50px;
+                border-style: dotted double solid inset;
+                border-width: 20px 10px 100px 10px;
+                border-color: green red aqua black;
             }
             #div2{
                 background-color: yellow;
-                width: 200px;
-                height: 5000px;
+                margin: 50px 50px 20px 20px;
+                width: 500px;
+                height: 500px;
+                padding: 50px;
+                border: 10px green dashed;
+                border-radius: 50px;
             }
             .underlined{
                 text-decoration: underline;
@@ -27,14 +34,24 @@
             .large{
                 font-size: 250%;
             }
+            
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+            }
         </style>
         
         
     </head>
     <body>
-        <h1 id="#top">CSS YAY!</h1>
+        <h1>CSS YAY!</h1>
         <div id="div1">
-            <p><a href="#top">Back to the top!</a></p>
+            <p class="red">Dies ist ein Text.</p>
+            <p class="large">Noch mehr Text.</p>
         </div>
         <div id="div2">
             <p>Dies ist etwas mehr Text. <span class="underlined">Und dies ist unterstrichen</span>.</p>
