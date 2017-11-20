@@ -11,11 +11,37 @@
                 font-family: 'News Cycle', sans-serif;
                 font-variant: normal;
             }
+            .bold{
+                font-weight: bold;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .underlined{
+                text-decoration: underline;
+            }
+            .large{
+                letter-spacing: -5px;
+                text-align: center;
+                font-size: 500%;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color: coral;
+                text-decoration: underline;
+            }
         </style>
         
         
     </head>
     <body>
-        <p>Dies ist etwas Text!</p>
+        <p class="bold">Dies ist etwas fetter Text!</p>
+        <p class="italic">Dies ist etwas kursiver Text!</p>
+        <p class="underlined">Dies ist etwas unterstrichener Text!</p>
+        <p class="bold underlined">Dies ist etwas unterstrichener, fetter Text!</p>
+        <a href="">Dies ist ein Link, der nicht unterstrichen ist.</a>
+        <p class="large">Dies ist riesiger, zentrierter Text!</p>
     </body>
 </html>  
