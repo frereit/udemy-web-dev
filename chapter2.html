@@ -6,15 +6,27 @@
         
         <style type="text/css">
             
-            p{
+            .red{
                 color: crimson;
+            }
+            .underlined{
+                color: aqua;
+                text-decoration: underline;
+            }
+            .big{
                 font-size: 200%;
+            }
+            .smallcaps{
                 font-family: monospace;
-                font-variant: small-caps;
+                font-variant: small-caps
             }
             h1{
                 color: blue;
                 font-size: 300%
+            }
+            #green{
+                color: green;
+                font-style: italic
             }
         
         </style>
@@ -23,8 +35,9 @@
     </head>
     <body>
         <h1>CSS YAY!</h1>
-        <p>Dies ist ein Text.</p>
-        <p>Noch mehr Text.</p>
-        <p>Internal CSS ist super.</p>
+        <p class="red">Dies ist ein Text.</p>
+        <p class="big">Noch mehr Text.</p>
+        <p id="green">Dies ist etwas mehr Text. <span class="underlined">Und dies ist unterstrichen</span>.</p>
+        <p class="smallcaps">Internal CSS ist super.</p>
     </body>
 </html>  
