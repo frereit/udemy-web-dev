@@ -6,38 +6,36 @@
         
         <style type="text/css">
             
-            .red{
-                color: crimson;
+            #div1{
+                color: blue;
+                background-color: pink;
+                width: 100px;
+            }
+            #div2{
+                background-color: yellow;
             }
             .underlined{
-                color: aqua;
                 text-decoration: underline;
             }
-            .big{
-                font-size: 200%;
+            .red{
+                color: red;
             }
-            .smallcaps{
-                font-family: monospace;
-                font-variant: small-caps
+            .large{
+                font-size: 250%;
             }
-            h1{
-                color: blue;
-                font-size: 300%
-            }
-            #green{
-                color: green;
-                font-style: italic
-            }
-        
         </style>
         
         
     </head>
     <body>
         <h1>CSS YAY!</h1>
-        <p class="red">Dies ist ein Text.</p>
-        <p class="big">Noch mehr Text.</p>
-        <p id="green">Dies ist etwas mehr Text. <span class="underlined">Und dies ist unterstrichen</span>.</p>
-        <p class="smallcaps">Internal CSS ist super.</p>
+        <div id="div1">
+            <p class="red">Dies ist ein Text.</p>
+            <p class="large">Noch mehr Text.</p>
+        </div>
+        <div id="div2">
+            <p>Dies ist etwas mehr Text. <span class="underlined">Und dies ist unterstrichen</span>.</p>
+            <p>Internal CSS ist super.</p>
+        </div>
     </body>
 </html>  
