@@ -1,34 +1,144 @@
 <!doctype html>
 <html>
     <head>
-        <title>CSS!</title>
-        <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+        <title>ARD Startseite</title>
         <meta charset="utf-8"/>
         
         <style type="text/css">
-            p{
-                font-family: 'News Cycle', sans-serif;
-                font-variant: normal;
+            * {
+                font-family: Arial;
+            }
+            .menu{
+                background-color: #2E456F;
+                width: auto;
+                height: 35px;
+                margin: 0px;
+                padding-left: 130px;
+                padding-right: 130px;
+            }
+            .menuitem{
+                margin: 0px;
+                padding-top:10px;
+                padding-bottom: 8px;
+                padding-left: 5px;
+                padding-right: 5px;
+                width: auto;
+                float: left;
+                color: white;
+            }
+            .main-article{
+                background-color: white;
+                height: 400px;
+                width: auto;
+                margin-left: 130px;
+                margin-right: 130px;
+                margin-top: 100px;
+                padding: 8px;
+            }
+            #title{
+                margin-top: 0px;
+                padding: 3px;
+                margin-bottom: 0px;
+                background-color: #0074CD;
+                width: 120px;
+                font-weight: bold;
+                color: white;
+            }
+            #mainimage{
+                height: 375px;
+                float: left;
+            }
+            #maintitle{
+                float: left;
+                margin: 10px;
+                color: black;
+            }
+            #mainarticle{
+                float:none;
+                color: black;
+                position: relative;
+                left: 10px;
+            }
+            #background{
+                position: fixed;
+                z-index: -1;
+            }
+            #logo_big{
+                padding-left: 130px;
+                float: left;
+            }
+            #searchfield{
+                margin-top: 23px;
+                margin-right: 130px;
+                height: 20px;
+                float: right;
+            }
+            #searchbutton{
+                margin-top: 27px;
+                height:20px;
+                float: right;
+                position: relative;
+                left: 170px;
             }
             a{
                 text-decoration: none;
+                color: white;
             }
-            a:hover{
+            a.menuitem:hover{
+                background-color: white;
+                color: black;
+            }
+            a.menuitem:focus{
                 text-decoration: underline;
-                color: #e74c3c;
             }
-            a:visited{
-                color: #9b59b6;
+            #active{
+                background-color: white;
+                color: black;
             }
-            a:link{
-                color: #3498db;
+            body{
+                margin: 0px;
+            }
+            .clear-floats{
+                clear: both;
             }
         </style>
         
         
     </head>
     <body>
-        <p><a href="chapter1.html">Kapitel 1 Challenge</a></p>
-        <p><a href="https://www.ebay.de" target="_blank">Ebay</a></p>
+        <img src="background.jpg" id="background">
+        <div class="menu">
+            <p id="active" class="menuitem">ARD Home</p>
+            <a class="menuitem" href="http://www.tagesschau.de/">Nachrichten</a>
+            <a class="menuitem" href="http://www.sportschau.de/">Sport</a>
+            <a class="menuitem" href="https://boerse.ard.de/index.html">Börse</a>
+            <a class="menuitem" href="http://www.ard.de/home/ratgeber/ARD_Ratgeber/22630/index.html">Ratgeber</a>
+            <a class="menuitem" href="http://www.ard.de/home/wissen/ARD_Wissen/23160/index.html">Wissen</a>
+            <a class="menuitem" href="http://www.ard.de/home/kultur/ARD_Kultur/63274/index.html">Kultur</a>
+            <a class="menuitem" href="http://www.ard.de/kinder/ARD_Kinder/3275060/index.html">Kinder</a>
+            <a class="menuitem" href="http://www.ard.de/home/die-ard/Die_ARD_Startseite/84050/index.html">Die ARD</a>
+            <a class="menuitem" href="http://www.daserste.de/" style="margin-left: 30px"><b>Fernsehen</b></a>
+            <a class="menuitem" href="http://www.ard.de/home/radio/Radio/22550/index.html"><b>Radio</b></a>
+            <a class="menuitem" href="http://www.ardmediathek.de/tv"><b>ARD Mediathek</b></a>
+            <a href="http://www.ard.de/home/ard/ARD_Startseite/21920/index.html"><img src="ard.png" class="menuitem" style="padding-top: 2px; float: right" width="60px" height="30ßpx"></a>
+        </div>
+        <div class="clear-floats"></div>
+        <a href="http://www.ard.de/home/ard/ARD_Startseite/21920/index.html"><img src="ard_blue.png" id="logo_big"></a>
+        <form>
+            <input id="searchfield" type="text" placeholder="Suche">
+            <a href="#"><img id="searchbutton" src="search.png"></a>
+        </form>
+        <div class="main-article">
+            <p id="title"><a href="http://www.tagesschau.de/">NACHRICHTEN</a></p>
+            <a href="http://www.tagesschau.de/inland/deutschlandtrend-1031.html">
+                <img id="mainimage" src="neuwahlen.jpg">
+                <p style="margin-left: 680px; color: black">ARD-DeutschlandTrend extra</p>
+                <h3 id="maintitle">Große Mehrheit für Neuwahl</h3>
+                <p id="mainarticle"><br><br><br>Eine große Mehrheit der Deutschen bedauert das Scheitern der Jamaika-Sondierungen und wünscht sich eine Neuwahl, zeigt eine Blitzumfrage des DeutschlandTrends. Am Wahlergebnis würde sich aber wenig ändern, obwohl viele mit FDP-Chef Lindner unzufriedener sind. Von Ellen Ehni. <b>| mehr</b></p>
+            </a>
+            <hr>
+            <a href="http://www.tagesschau.de/ausland/mladic-107.html"><p style="float: left; color: black;">UN-Tribunal</p></a>
+        </div>
+
     </body>
 </html>  
